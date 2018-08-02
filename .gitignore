@@ -1,0 +1,13 @@
+.DS_Store
+*.log
+
+coverage
+node_modules
+public/assets
+public/webpack-assets.json
+.idea
+yarn.lock
+.gitold
+package-lock.json
+*.serverless
+.env

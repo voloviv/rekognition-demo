@@ -1,0 +1,3 @@
+.slick-slide, .slick-slide *{ outline: none !important; }
+.slick-list { outline: none !important; }
+.slick-list:focus { outline: none !important; }

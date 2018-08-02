@@ -1,0 +1,13 @@
+image: node:8.9.3
+pipelines:
+  default:
+    - step:
+        caches:
+          - node
+        script:
+          - apt-get update && apt-get install -y python-dev zip
+          - curl -O https://bootstrap.pypa.io/get-pip.py
+          - python get-pip.py
+          - pip install awscli
+          - zip -r --exclude=*node_modules* ../$BITBUCKET_BRANCH.zip .
+          - aws s3 cp ../$BITBUCKET_BRANCH.zip s3://$AWS_DEPLOY_BUCKET/$BITBUCKET_BRANCH.zip

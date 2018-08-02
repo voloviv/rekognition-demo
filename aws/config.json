@@ -1,0 +1,18 @@
+[
+  {
+    "ParameterKey": "WebsiteServiceSize",
+    "ParameterValue": "1"
+  },
+  {
+    "ParameterKey": "ApiSecretKey",
+    "ParameterValue": "blablabla"
+  },
+  {
+    "ParameterKey": "ApexDomain",
+    "ParameterValue": "voloviv.com"
+  },
+  {
+    "ParameterKey": "StageName",
+    "ParameterValue": "prod"
+  }
+]
